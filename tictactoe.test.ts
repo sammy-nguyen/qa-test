@@ -22,15 +22,27 @@ test('I can start a game', async () => {
 test('add X into upper left square', async () => {
 
     await (await driver).findElement(By.id('cell-0')).click()
-    //await xButton.sendKeys('X\n')
+
     await driver.sleep(2000)
 
 });
 
+
+
+test('Check to see that the computer moves ', async () => {
+
+    await (await driver).findElement(By.id('cell-1'))
+
+    await driver.sleep(4000)
+
+});
+
+
+
 test('add X into upper right square', async () => {
 
     await (await driver).findElement(By.id('cell-2')).click()
-    //await xButton.sendKeys('X\n')
+
     await driver.sleep(2000)
 
 });
@@ -39,9 +51,7 @@ test('add X into upper right square', async () => {
 test('add X into lower right square', async () => {
 
     await (await driver).findElement(By.id('cell-8')).click()
-    //await xButton.sendKeys('X\n')
+
     await driver.sleep(4000)
 
 });
-
-
